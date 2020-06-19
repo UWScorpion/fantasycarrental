@@ -1,7 +1,18 @@
 import car1 from "./images/details-1.jpeg";
+// Basic car details-----------------------------
 import car2 from "./images/details-2.jpeg";
 import car3 from "./images/details-3.jpeg";
 import car4 from "./images/details-4.jpeg";
+// Premium car details-----------------------------
+import car5 from "./images/details-5.jpeg";
+import car6 from "./images/details-6.jpeg";
+import car7 from "./images/details-7.jpeg";
+// Luxury car details-----------------------------
+import car8 from "./images/details-8.jpeg";
+import car9 from "./images/details-9.jpeg";
+import car10 from "./images/details-10.jpeg";
+
+
 import img1 from "./images/car-1.jpeg";
 import img2 from "./images/car-2.jpeg";
 import img3 from "./images/car-3.jpeg";
@@ -21,25 +32,25 @@ export default [
       id: "1"
     },
     fields: {
-      name: "single economy",
-      slug: "single-economy",
+      name: "Economy A",
+      slug: "Economy A",
       type: "Basic",
       price: 99,
       size: 200,
       capacity: 6,
       pets: false,
-      breakfast: false,
+      smoking: true,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -78,25 +89,25 @@ export default [
       id: "2"
     },
     fields: {
-      name: "single basic",
-      slug: "single-basic",
+      name: "Economy B",
+      slug: "Economy B",
       type: "Basic",
       price: 129,
       size: 250,
       capacity: 6,
       pets: false,
-      breakfast: false,
+      smoking: true,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -135,25 +146,25 @@ export default [
       id: "3"
     },
     fields: {
-      name: "single standard",
-      slug: "single-standard",
+      name: "Economy C",
+      slug: "Economy C",
       type: "Basic",
       price: 139,
       size: 300,
       capacity: 5,
       pets: true,
-      breakfast: false,
+      smoking: true,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -192,25 +203,25 @@ export default [
       id: "4"
     },
     fields: {
-      name: "single deluxe",
-      slug: "single-deluxe",
+      name: "Premium A",
+      slug: "Premium A",
       type: "Premium",
       price: 299,
       size: 400,
       capacity: 2,
       pets: true,
-      breakfast: true,
+      smoking: true,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -249,25 +260,25 @@ export default [
       id: "5"
     },
     fields: {
-      name: "double economy",
-      slug: "double-economy",
+      name: "Premium B",
+      slug: "Premium B",
       type: "Premium",
       price: 299,
       size: 300,
       capacity: 4,
       pets: false,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -306,25 +317,25 @@ export default [
       id: "6"
     },
     fields: {
-      name: "double basic",
-      slug: "double-basic",
+      name: "Premium C",
+      slug: "Premium C",
       type: "Premium",
       price: 399,
       size: 350,
       capacity: 4,
       pets: false,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -363,25 +374,25 @@ export default [
       id: "7"
     },
     fields: {
-      name: "double standard",
-      slug: "double-standard",
+      name: "Premium D",
+      slug: "Premium D",
       type: "Premium",
       price: 399,
       size: 400,
       capacity: 2,
       pets: true,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -427,18 +438,18 @@ export default [
       size: 500,
       capacity: 4,
       pets: true,
-      breakfast: true,
+      smoking: true,
       featured: true,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -477,25 +488,25 @@ export default [
       id: "9"
     },
     fields: {
-      name: "family economy",
-      slug: "family-economy",
+      name: "Luxury A",
+      slug: "Luxury A",
       type: "Luxury",
       price: 599,
       size: 500,
       capacity: 2,
       pets: false,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -534,25 +545,25 @@ export default [
       id: "10"
     },
     fields: {
-      name: "family basic",
-      slug: "family-basic",
+      name: "Luxury B",
+      slug: "Luxury B",
       type: "Luxury",
       price: 799,
       size: 550,
       capacity: 2,
       pets: false,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -591,25 +602,25 @@ export default [
       id: "11"
     },
     fields: {
-      name: "family standard",
-      slug: "family-standard",
+      name: "Premium E",
+      slug: "Premium E",
       type: "Premium",
       price: 299,
       size: 600,
       capacity: 4,
       pets: true,
-      breakfast: false,
+      smoking: false,
       featured: false,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -655,18 +666,18 @@ export default [
       size: 700,
       capacity: 2,
       pets: true,
-      breakfast: true,
+      smoking: true,
       featured: true,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -679,21 +690,21 @@ export default [
         {
           fields: {
             file: {
-              url: car2
+              url: car5
             }
           }
         },
         {
           fields: {
             file: {
-              url: car3
+              url: car6
             }
           }
         },
         {
           fields: {
             file: {
-              url: car4
+              url: car7
             }
           }
         }
@@ -705,25 +716,25 @@ export default [
       id: "13"
     },
     fields: {
-      name: "luxury",
-      slug: "luxury-car",
+      name: "Luxury",
+      slug: "Luxury",
       type: "Luxury",
       price: 699,
       size: 1000,
       capacity: 2,
       pets: true,
-      breakfast: true,
+      smoking: true,
       featured: true,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum nulla sit amet dignissim rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tristique dui eget vestibulum ultrices. Nullam suscipit sed est ac luctus. Phasellus semper leo id dictum ullamcorper. Suspendisse porttitor nisi sit amet sapien iaculis pulvinar. Phasellus neque odio, bibendum non malesuada quis, efficitur eget elit. Morbi condimentum eleifend ipsum nec gravida.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet",
+        "Lorem ipsum dolor sit amet"
       ],
       images: [
         {
@@ -736,21 +747,21 @@ export default [
         {
           fields: {
             file: {
-              url: car2
+              url: car8
             }
           }
         },
         {
           fields: {
             file: {
-              url: car3
+              url: car9
             }
           }
         },
         {
           fields: {
             file: {
-              url: car4
+              url: car10
             }
           }
         }

@@ -16,7 +16,7 @@ export default function CarFilter({cars}) {
         maxPrice, 
         minSize, 
         maxSize, 
-        breakfast, 
+        smoking, 
         pets
     } = context
     let types = getUnique(cars, 'type')
@@ -61,7 +61,7 @@ export default function CarFilter({cars}) {
 
                 <div className="form-group">
                     <label htmlFor="price">
-                        Reantal price less than ${price}/day
+                        Reantal price ${price}/day
                     </label>
                     <input 
                     type="range" 
@@ -75,7 +75,7 @@ export default function CarFilter({cars}) {
                     />
                 </div>
 
-                <div className="form-group">
+                {/* <div className="form-group">
                     <label htmlFor="size">car size</label>
                     <div className="size-inputs">
                         <input 
@@ -95,12 +95,12 @@ export default function CarFilter({cars}) {
                         className="size-input"
                         />
                     </div>
-                </div>
+                </div> */}
                 <div className="form-group">
                   
                         <div className="single-extra">
-                            <input type="checkbox" name="breakfast" id="breakfast" checked={breakfast} onChange={handleChange}/>
-                            <label htmlFor="breakfast" >Smoking</label>
+                            <input type="checkbox" name="smoking" id="smoking" checked={smoking} onChange={handleChange}/>
+                            <label htmlFor="smoking" >Smoking</label>
                         </div>
                 
                  

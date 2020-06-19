@@ -8,7 +8,7 @@ export default function Contact() {
     return (
         <>
         <Hero hero="contactHero">
-                <Banner title="Contact">
+                <Banner title="Contact US">
                         {/* <Link to='/' className= "btn-primary">
                             Return
                         </Link> */}

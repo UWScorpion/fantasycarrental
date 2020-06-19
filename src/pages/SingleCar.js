@@ -20,7 +20,6 @@ export default class SingleCar extends Component {
     render() {
         const {getCar} = this.context;
         const car = getCar(this.state.slug);
-        console.log(car);
         if (!car){
             return <div className = "error">
                 <h3>No Such Car</h3>
@@ -29,7 +28,7 @@ export default class SingleCar extends Component {
                 </Link>
             </div>
         }
-        const {name, description, capacity, size, price, extras, breakfast, pets, images} = car;
+        const {name, description, capacity, size, price, extras, smoking, pets, images} = car;
         const [mainImg,...defaultImg] = images;
         return (
             <>
@@ -53,14 +52,14 @@ export default class SingleCar extends Component {
                             </article>
                             <article className="info">
                                 <h3>info</h3>
-                                <h6>price: ${price}</h6>
-                                <h6>size: ${size}SQFT</h6>
+                                <h6>price: ${price}/day</h6>
+                                {/* <h6>size: ${size}SQFT</h6> */}
                                 <h6>
                                     Max capacity:{
                                         capacity > 1 ?`${capacity} people`:`${capacity} person`
                                     }</h6>
                                 <h6>{pets?"pets allowed" : "no pets allowed"}</h6>
-                                <h6>{breakfast && "free breakfast included"}</h6>
+                                <h6>{smoking && "Smoking Allowed"}</h6>
                             </article>
                     </div>
                 </section>

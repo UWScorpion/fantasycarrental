@@ -14,7 +14,7 @@ export default class CarProvider extends Component {
         maxPrice:0,
         minSize:0,
         maxSize:0,
-        breakfast:false,
+        smoking:false,
         pets:false
     };
     componentDidMount(){
@@ -57,7 +57,7 @@ export default class CarProvider extends Component {
     }
     filterCars = ()=>{
         let {
-            cars, type, capacity, price, minSize, maxSize, breakfast, pets
+            cars, type, capacity, price, minSize, maxSize, smoking, pets
         } = this.state
         let tempCars = [...cars];
         capacity = parseInt(capacity)
@@ -67,14 +67,14 @@ export default class CarProvider extends Component {
         }
 
         if (capacity !== 1){
-            tempCars = tempCars.filter(car => car.capacity >= capacity)
+            tempCars = tempCars.filter(car => car.capacity === capacity)
         }
      
             tempCars = tempCars.filter(car => car.price <= price)
 
             tempCars = tempCars.filter(car => car.size >= minSize && car.size <= maxSize)
-        if (breakfast){
-            tempCars = tempCars.filter(car => car.breakfast === true)
+        if (smoking){
+            tempCars = tempCars.filter(car => car.smoking === true)
         }
         if (pets){
             tempCars = tempCars.filter(car => car.pets === true)
