@@ -4,15 +4,15 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { RoomProvider } from './context';
+import { CarProvider } from './context';
 
 
 ReactDOM.render(
-  <RoomProvider>
+  <CarProvider>
 <Router>
     <App />
   </Router>
-  </RoomProvider>,
+  </CarProvider>,
   document.getElementById('root')
 );
 

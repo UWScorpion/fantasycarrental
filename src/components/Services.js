@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import {FaCocktail, FaHiking, FaShuttleVan, FaBeer} from 'react-icons/fa';
+import {FaPhoneAlt, FaCheck, FaStickyNote, FaKey} from 'react-icons/fa';
 import Title from './Title';
 export default class extends Component {
     state={
         services:[
             {
-                icon:<FaCocktail/>,
+                icon:<FaPhoneAlt/>,
                 title:"Free",
                 info:'Roadside Assistance'
             },
             {
-                icon:<FaHiking/>,
+                icon:<FaCheck/>,
                 title:"Ganrantee",
                 info:'Car Quality'
             },
             {
-                icon:<FaShuttleVan/>,
-                title:"free cocktails",
-                info:'hbihdioshduindfui'
+                icon:<FaStickyNote/>,
+                title:"Best",
+                info:'Insurance Policy'
             },
             {
-                icon:<FaBeer/>,
-                title:"free cocktails",
-                info:'hbihdioshduindfui'
+                icon:<FaKey/>,
+                title:"Hassle-free",
+                info:'Return'
             },
         ]
     }

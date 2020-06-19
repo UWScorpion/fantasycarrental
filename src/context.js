@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import items from './data';
-const RoomContext = React.createContext();
-export default class RoomProvider extends Component {
+const CarContext = React.createContext();
+export default class CarProvider extends Component {
     state = {
-        rooms:[],
-        sortedRooms:[],
-        featuredRooms:[],
+        cars:[],
+        sortedCars:[],
+        featuredCars:[],
         loading: true,
         type:'all',
         capacity:1,
@@ -18,14 +18,14 @@ export default class RoomProvider extends Component {
         pets:false
     };
     componentDidMount(){
-        let rooms = this.formatData(items)
-        let featuredRooms = rooms.filter(car => car.featured === true)
-        let maxPrice=Math.max(...rooms.map(item=>item.price))
-        let maxSize=Math.max(...rooms.map(item=>item.size))
+        let cars = this.formatData(items)
+        let featuredCars = cars.filter(car => car.featured === true)
+        let maxPrice=Math.max(...cars.map(item=>item.price))
+        let maxSize=Math.max(...cars.map(item=>item.size))
         this.setState({
-            rooms, 
-            featuredRooms, 
-            sortedRooms:rooms, 
+            cars, 
+            featuredCars, 
+            sortedCars:cars, 
             loading:false,
             price:maxPrice,
             maxPrice,
@@ -36,15 +36,15 @@ export default class RoomProvider extends Component {
         let tempItems = items.map(item =>{
             let id = item.sys.id
             let images = item.fields.images.map(image => image.fields.file.url);
-            let room = {...item.fields, images, id}
-            return room;
+            let car = {...item.fields, images, id}
+            return car;
         })
         return tempItems;
     }
-    getRoom =(slug) =>{
-        let tempRooms = [...this.state.rooms];
-        const room = tempRooms.find((room)=>room.slug === slug)
-        return room;
+    getCar =(slug) =>{
+        let tempCars = [...this.state.cars];
+        const car = tempCars.find((car)=>car.slug === slug)
+        return car;
     }
     handleChange = event =>{
         const target = event.target
@@ -52,56 +52,56 @@ export default class RoomProvider extends Component {
         const name=event.target.name
         this.setState({
             [name]:value
-        }, this.filterRooms)
+        }, this.filterCars)
       
     }
-    filterRooms = ()=>{
+    filterCars = ()=>{
         let {
-            rooms, type, capacity, price, minSize, maxSize, breakfast, pets
+            cars, type, capacity, price, minSize, maxSize, breakfast, pets
         } = this.state
-        let tempRooms = [...rooms];
+        let tempCars = [...cars];
         capacity = parseInt(capacity)
         price = parseInt(price)
         if (type !== 'all'){
-            tempRooms = tempRooms.filter(room => room.type === type)
+            tempCars = tempCars.filter(car => car.type === type)
         }
 
         if (capacity !== 1){
-            tempRooms = tempRooms.filter(room => room.capacity >= capacity)
+            tempCars = tempCars.filter(car => car.capacity >= capacity)
         }
      
-            tempRooms = tempRooms.filter(room => room.price <= price)
+            tempCars = tempCars.filter(car => car.price <= price)
 
-            tempRooms = tempRooms.filter(room => room.size >= minSize && room.size <= maxSize)
+            tempCars = tempCars.filter(car => car.size >= minSize && car.size <= maxSize)
         if (breakfast){
-            tempRooms = tempRooms.filter(room => room.breakfast === true)
+            tempCars = tempCars.filter(car => car.breakfast === true)
         }
         if (pets){
-            tempRooms = tempRooms.filter(room => room.pets === true)
+            tempCars = tempCars.filter(car => car.pets === true)
         }
         this.setState({
-            sortedRooms:tempRooms
+            sortedCars:tempCars
         })
     }
     render() {
         return (
-            <RoomContext.Provider value={{
+            <CarContext.Provider value={{
             ...this.state, 
-            getRoom:this.getRoom, 
+            getCar:this.getCar, 
             handleChange:this.handleChange}
             }>
                 {this.props.children}
-            </RoomContext.Provider>
+            </CarContext.Provider>
         )
     }
 }
 
-const RoomConsumer = RoomContext.Consumer;
-export function withRoomConsumer(Component){
+const CarConsumer = CarContext.Consumer;
+export function withCarConsumer(Component){
     return function ConsumerWrapper(props){
-        return <RoomConsumer>
+        return <CarConsumer>
             {value =><Component {...props} context={value}/>}
-        </RoomConsumer>
+        </CarConsumer>
     }
 }
-export { RoomProvider, RoomConsumer, RoomContext };
+export { CarProvider, CarConsumer, CarContext };

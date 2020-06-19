@@ -4,12 +4,11 @@ import Banner from '../components/Banner';
 import {Link} from 'react-router-dom';
 import Footer from '../components/Footer';
 
-export default function Testimonials() {
+export default function Contact() {
     return (
-        
         <>
-        <Hero hero="testimonialsHero">
-                <Banner title="Testimonials">
+        <Hero hero="contactHero">
+                <Banner title="Contact">
                         {/* <Link to='/' className= "btn-primary">
                             Return
                         </Link> */}
@@ -17,6 +16,5 @@ export default function Testimonials() {
         </Hero>
         <Footer/>
         </>
-        
     )
 }
