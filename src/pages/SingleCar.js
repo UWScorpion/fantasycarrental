@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import defaultBcg from '../images/car-1.jpeg'
-import Hero from '../components/Hero'
+// import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import {Link} from 'react-router-dom'
 import Footer from '../components/Footer';
@@ -28,7 +28,7 @@ export default class SingleCar extends Component {
                 </Link>
             </div>
         }
-        const {name, description, capacity, size, price, extras, smoking, pets, images} = car;
+        const {name, description, capacity, /*size,*/ price, extras, smoking, pets, images} = car;
         const [mainImg,...defaultImg] = images;
         return (
             <>

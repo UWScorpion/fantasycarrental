@@ -14,8 +14,8 @@ export default function CarFilter({cars}) {
         price, 
         minPrice, 
         maxPrice, 
-        minSize, 
-        maxSize, 
+        // minSize, 
+        // maxSize, 
         smoking, 
         pets
     } = context
